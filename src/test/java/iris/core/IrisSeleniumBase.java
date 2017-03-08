@@ -163,7 +163,7 @@ public abstract class IrisSeleniumBase {
 				System.setProperty(browser.toString(), driverPath);
 			}
 			// If you comment out the line below then it forces it to run in the
-			// browser = Browser.CHROME_REMOTE;
+			browser = Browser.CHROME_REMOTE;
 
 			switch (browser) {
 			case CHROME:
@@ -175,7 +175,7 @@ public abstract class IrisSeleniumBase {
 				break;
 			case CHROME_REMOTE:
 				// For the linux box
-				System.setProperty("webdriver.chrome.driver", "/home/irisuser/chromedriver");
+				System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\chromedriver.exe");
 				// For a local CHROME_REMOTE use this:
 				// System.setProperty("webdriver.chrome.driver",
 				// "C:\\Users\\vickery_b-r\\Downloads\\chromedriver.exe");
